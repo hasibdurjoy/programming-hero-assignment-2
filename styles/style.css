@@ -10,18 +10,22 @@ body{
 main{
 }
 
-/* header banner styles */
-.website-header{
+/* banner styles */
+.banner-section{
     background-color: #2D25A0;
+    padding: 85px;
 }
-.header-banner{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: space-around;
-    padding: 86px;
+.banner{
+    display: flex;
+    justify-content: center;
 }
-.banner-title{
-    align-items: center;
+.banner-title {
+    width: 49%;
+    margin-right: 25px;
+}
+.banner-thumbnail{
+    width: 49%;
+    margin-left: 25px;
 }
 .banner-title h1{
     font-size: 64px;
@@ -37,10 +41,21 @@ main{
 .fa-arrow-right{
     margin-left: 5px;
 }
+.banner-thumbnail img{
+    width: 100%;
+}
 
 /* animation in header  */
-.website-header:hover .banner-thumbnail-image {
-    transform: rotate(360deg)  scale(0.5);
+.banner-section:hover .banner-thumbnail-image {
+    transform: rotate(360deg)  scale(0.85);
+    transform-origin: center;
+    overflow: hidden;
+    transition: transform 3s ease-in-out;
+    
+}
+
+.banner-section:hover .banner-title h1 {
+    transform: rotate(-360deg)  scale(1.1);
     transform-origin: center;
     overflow: hidden;
     transition: transform 3s ease-in-out;
@@ -97,15 +112,24 @@ main{
 /* responsive */
 @media only screen and (max-width:660px) {
 
-    .header-banner{
+    .banner-section{
+        width: 90%;
+        padding: 0px 16px;
+    }
+    .banner{
+        width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        width: 100%;
-        padding: 0px 80px;
     }
-    .banner-thumbnail-image{
+    .banner-thumbnail{
         width: 100%;
+        margin: 0;
+    }
+    .banner-thumbnail img{
+        width: 100%;
+    }
+    .banner-title button{
+        margin-bottom: 30px;
     }
     .players{
         display: flex;
