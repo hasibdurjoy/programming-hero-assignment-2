@@ -7,7 +7,26 @@ body{
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-main{
+/* extra styles */
+
+/* animation in button  */
+@keyframes colouring {
+    0% {
+        background-color: #E02C6D;
+        transform: scale(1);
+    }
+    25% {
+        background-color: yellow;
+        transform: scale(1.5);
+    }
+    0% {
+        background-color: #E02C6D;
+        transform: scale(1);
+    }
+    100% {
+        background-color: yellow;
+        transform: scale(1.5);
+    }
 }
 
 /* banner styles */
@@ -62,26 +81,6 @@ main{
     transition: transform 3s ease-in-out;
     
 }
-
-/* animation in button  */
-@keyframes colouring {
-    0% {
-        background-color: #E02C6D;
-        transform: scale(1);
-    }
-    25% {
-        background-color: yellow;
-        transform: scale(1.5);
-    }
-    0% {
-        background-color: #E02C6D;
-        transform: scale(1);
-    }
-    100% {
-        background-color: yellow;
-        transform: scale(1.5);
-    }
-}
 /* main part styles */
 
 .players{
@@ -124,7 +123,7 @@ main{
     width: 480px;
     height: 110px;
 }
-.footer-icons img{
+.footer-icons a{
     width: 32px;
     height: 32px;
     padding: 0px 10px;
