@@ -55,11 +55,7 @@ main{
 }
 
 .banner-section:hover .banner-title h1 {
-    transform: rotate(-360deg)  scale(1.1);
-    transform-origin: center;
-    overflow: hidden;
-    transition: transform 3s ease-in-out;
-    
+    transform: rotate(-360deg) ;
 }
 /* main part styles */
 
